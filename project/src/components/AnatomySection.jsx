@@ -3,8 +3,6 @@ import { healthIndicators } from '../data/mockData';
 import { CheckCircle, AlertCircle, XCircle } from 'lucide-react';
 import anatomyImg from '../assets/Anatomy.png';
 
-
-
 const AnatomySection = () => {
   const getStatusIcon = (status) => {
     switch (status) {
@@ -33,9 +31,16 @@ const AnatomySection = () => {
   };
 
   return (
-    <img src={anatomyImg} alt="Anatomy" className='h-90 rounded-lg mr-6'/>
+    <div className="w-full flex flex-col items-center md:flex-row md:items-start md:space-x-8">
+      <img
+        src={anatomyImg}
+        alt="Anatomy"
+        className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg rounded-lg mb-4 md:mb-0"
+      />
+      {/* Example: Add health indicators next to the image for responsiveness */}
+      
+    </div>
   );
-
 };
 
 export default AnatomySection;
