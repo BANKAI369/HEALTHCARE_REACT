@@ -9,7 +9,7 @@ const Sidebar = () => {
   };
   
   return (
-    <aside className="bg-white shadow-sm w-16 md:w-64 h-screen fixed left-0 top-0 pt-20 pb-4 overflow-y-auto transition-all duration-300 z-20">
+    <aside className="bg-white shadow-sm w-16 md:w-64 h-screen fixed left-0 top-0 pt-20 pb-4 transition-all duration-300 z-20">
       <div className="px-4">
         <h2 className="text-xs font-semibold text-gray-500 uppercase tracking-wider hidden md:block mb-4 pl-2">
           General
@@ -31,7 +31,7 @@ const Sidebar = () => {
               </div>
               <span className="ml-3 text-sm font-medium hidden md:block">{item.title}</span>
               {item.id === 'dashboard' && (
-                <div className="h-full w-1 bg-indigo-600 rounded-l-md absolute right-0 hidden md:block"></div>
+                <div className="h-full w-1 bg-indigo-600 rounded-l-md right-0 hidden md:block"></div>
               )}
             </a>
           ))}

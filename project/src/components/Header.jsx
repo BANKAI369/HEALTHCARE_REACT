@@ -3,12 +3,12 @@ import { Search, Bell, Plus } from 'lucide-react';
 
 const Header = () => {
   return (
-    <header className="bg-white shadow-sm py-2 px-6 sticky top-0 z-30">
+    <header className="bg-white shadow-sm py-2 px-4 sticky top-0 z-30">
       <div className="flex items-center justify-between">
         <div className="flex items-center">
           <h1 className="text-xl font-bold text-indigo-600"><span className="text-red">Health</span>care.</h1>
           <div className="ml-10 relative hidden md:block">
-            <div className="flex items-center border rounded-lg px-3 py-2 bg-gray-50 w--full">
+            <div className="flex items-center border rounded-lg px-3 bg-gray-50 w--full">
               <Search className="h-3 w-3 text-gray-400" />
               <input
                 type="text"

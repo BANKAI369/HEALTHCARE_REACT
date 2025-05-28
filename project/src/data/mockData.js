@@ -35,8 +35,9 @@ calendarDays[15].appointments = [{ time: '13:00', title: 'Cardiologist' }];
 calendarDays[22].appointments = [{ time: '15:00', title: 'Physiotherapy' }];
 
 export const calendarAppointments = [
-  { id: 'app1', title: 'Dentist', doctor: 'Dr. Cameron Williamson', time: '09:00', day: 'Thursday', date: '5 Oct 2021' },
-  { id: 'app2', title: 'Physiotherapy', doctor: 'Dr. Kevin Djones', time: '15:00', day: 'Saturday', date: '23 Oct 2021' },
+  { id: 'app1', title: 'Cardiologist', doctor: 'Dr. Cameron Williamson', time: '11:00', day: 'Monday', date: '5 May 2025' },
+  { id: 'app2', title: 'Dentist', doctor: 'Dr. Cameron Williamson', time: '14:00', day: 'Monday', date: '5 May 2025' },
+  { id: 'app3', title: 'Physiotherapy', doctor: 'Dr. Cameron Williamson', time: '11:00', day: 'Wednesday', date: '7 May 2025' },
 ];
 
 export const upcomingSchedule = [

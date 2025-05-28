@@ -8,7 +8,7 @@ import ActivityFeed from './ActivityFeed';
 const DashboardMainContent = () => {
   return (
     <div className="rounded-lg ">
-      <h1 className="text-2xl font-bold text-gray-800">Dashboard</h1>
+      <h1 className="text-2xl  font-bold text-gray-800">Dashboard</h1>
       <div className=' bg-[#f8f9fa] flex flex-row rounded-lg '>
         <div className='flex flex-col w-1/2'>
           <div className='flex flex-row bg-[#f8f9fa] p-4 rounded-lg shadow-sm mb-2'>
@@ -20,7 +20,7 @@ const DashboardMainContent = () => {
             <ActivityFeed />
           </div>
         </div>
-        <div className='flex flex-col w-1/2 p-2'>
+        <div className='flex flex-col w-1/2'>
           <CalendarView />
           <UpcomingSchedule />
           
