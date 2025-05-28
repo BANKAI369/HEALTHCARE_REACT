@@ -33,7 +33,7 @@ const AnatomySection = () => {
   };
 
   return (
-    <img className='w-15 h-15' src={anatomyImg} alt="Anatomy" />
+    <img src={anatomyImg} alt="Anatomy" className='h-80 rounded-lg mr-6'/>
   );
 
 };

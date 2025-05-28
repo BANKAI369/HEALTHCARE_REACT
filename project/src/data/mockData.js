@@ -4,7 +4,6 @@ export const navItems = [
   { id: 'calendar', title: 'Calendar', icon: 'Calendar' },
   { id: 'appointments', title: 'Appointments', icon: 'CalendarClock' },
   { id: 'statistics', title: 'Statistics', icon: 'BarChart2' },
-  { id: 'tests', title: 'Tests', icon: 'FileText' },
   { id: 'chat', title: 'Chat', icon: 'MessageSquare' },
   { id: 'support', title: 'Support', icon: 'LifeBuoy' },
   { id: 'setting', title: 'Setting', icon: 'Settings' },
@@ -21,6 +20,7 @@ export const healthCards = [
   { id: 'lungs', title: 'Lungs', date: '23 Sep 2021', status: 'warning' },
   { id: 'teeth', title: 'Teeth', date: '15 Oct 2021', status: 'critical' },
   { id: 'bone', title: 'Bone', date: '02 Oct 2021', status: 'healthy' },
+  { id: 'heart', title: 'Heart', date: '05 Oct 2021', status: 'healthy' },
 ];
 
 export const calendarDays = Array.from({ length: 31 }, (_, i) => ({
@@ -35,23 +35,23 @@ calendarDays[15].appointments = [{ time: '13:00', title: 'Cardiologist' }];
 calendarDays[22].appointments = [{ time: '15:00', title: 'Physiotherapy' }];
 
 export const calendarAppointments = [
-  { id: 'app1', title: 'Dentist', doctor: 'Dr. Smith', time: '09:00', day: 'Thursday', date: '5 Oct 2021' },
-  { id: 'app2', title: 'Physiotherapy Appointment', doctor: 'Dr. Johnson', time: '15:00', day: 'Saturday', date: '23 Oct 2021' },
+  { id: 'app1', title: 'Dentist', doctor: 'Dr. Cameron Williamson', time: '09:00', day: 'Thursday', date: '5 Oct 2021' },
+  { id: 'app2', title: 'Physiotherapy', doctor: 'Dr. Kevin Djones', time: '15:00', day: 'Saturday', date: '23 Oct 2021' },
 ];
 
 export const upcomingSchedule = [
   {
     day: 'Thursday',
     appointments: [
-      { id: 'app3', title: 'Health checkup complete', doctor: 'Dr. Williams', time: '09:00', day: 'Thursday', status: 'completed' },
-      { id: 'app4', title: 'Ophthalmologist', doctor: 'Dr. Brown', time: '11:30', day: 'Thursday', type: 'specialist' },
+      { id: 'app3', title: 'General Check-Up', doctor: 'Dr. Williams', time: '11:00 AM', day: 'Thursday', status: 'completed' },
+      { id: 'app4', title: 'Ophthalmologist', doctor: 'Dr. Brown', time: '14:00 PM', day: 'Thursday', type: 'specialist' },
     ]
   },
   {
     day: 'Saturday',
     appointments: [
-      { id: 'app5', title: 'Cardiologist', doctor: 'Dr. Davis', time: '10:00', day: 'Saturday', type: 'specialist' },
-      { id: 'app6', title: 'Neurologist', doctor: 'Dr. Miller', time: '14:00', day: 'Saturday', type: 'specialist' },
+      { id: 'app5', title: 'Cardiologist', doctor: 'Dr. Williams', time: '12:00 AM', day: 'Saturday', type: 'specialist' },
+      { id: 'app6', title: 'Neurologist', doctor: 'Dr. Green', time: '16:00 PM', day: 'Saturday', type: 'specialist' },
     ]
   }
 ];

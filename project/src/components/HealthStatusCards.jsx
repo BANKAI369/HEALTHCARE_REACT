@@ -30,11 +30,11 @@ const HealthStatusCards = () => {
   };
 
   return (
-    <div className="space-y-3 mt-4">
+    <div className="space-y-3 mt-4 flex flex-col">
       {healthCards.map((card) => (
         <div 
           key={card.id}
-          className={`p-3 rounded-lg border ${getStatusClass(card.status)} transition-all duration-300 hover:shadow-md cursor-pointer`}
+          className={`p-3 rounded-lg border ${getStatusClass(card.status)} transition-all duration-300`}
         >
           <div className="flex items-center justify-between">
             <div>

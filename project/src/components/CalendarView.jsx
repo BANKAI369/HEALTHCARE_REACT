@@ -3,15 +3,14 @@ import { calendarDays, calendarAppointments } from '../data/mockData';
 import { Calendar, Clock } from 'lucide-react';
 
 const CalendarView = () => {
-  // Generate a 7x5 grid for calendar days (October 2021)
   const daysOfWeek = ['S', 'M', 'T', 'W', 'T', 'F', 'S'];
   
   // Current month name
   const currentMonth = 'October 2021';
   
   return (
-    <div className="bg-white rounded-xl shadow-sm p-4 mt-6">
-      <div className="flex items-center justify-between mb-4">
+    <div className="bg-white rounded-xl shadow-sm p-4 mt-2">
+      <div className="flex items-center justify-between mb-2">
         <h2 className="text-lg font-medium text-gray-800">{currentMonth}</h2>
         <div className="flex space-x-2">
           <button className="p-1 rounded-md hover:bg-gray-100 transition-colors duration-200">
@@ -45,7 +44,7 @@ const CalendarView = () => {
         {calendarDays.map((day, index) => (
           <div
             key={`day-${index}`}
-            className={`h-9 text-center rounded-md relative
+            className={`h-7 text-center rounded-md relative
               ${day.appointments.length > 0 ? 'bg-indigo-50' : 'hover:bg-gray-50'}
               ${index === 4 ? 'ring-2 ring-indigo-500 bg-indigo-50' : ''}
               transition-all duration-200 cursor-pointer
@@ -64,9 +63,9 @@ const CalendarView = () => {
       </div>
       
       {/* Appointment cards */}
-      <div className="mt-6 space-y-3">
+      <div className="mt-6 flex gap-4">
         {calendarAppointments.map((appointment) => (
-          <div key={appointment.id} className="p-3 bg-white border border-gray-200 rounded-lg hover:shadow-md transition-shadow duration-200">
+          <div key={appointment.id} className="p-3 bg-white border border-gray-200 rounded-lg transition-shadow duration-200">
             <div className="flex justify-between items-start">
               <div>
                 <h3 className="font-medium text-gray-800">{appointment.title}</h3>

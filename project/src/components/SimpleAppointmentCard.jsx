@@ -37,15 +37,15 @@ const SimpleAppointmentCard = ({ appointment }) => {
   };
   
   return (
-    <div className={`p-3 rounded-lg border ${getStatusClass()} mb-3 transition-all duration-200 hover:shadow-sm cursor-pointer`}>
-      <div className="flex items-center justify-between">
+    <div className={`flex flex-row p-3 rounded-lg border ${getStatusClass()} mb-2 transition-all duration-200 w-1/2`}>
+      <div className="flex flex-row items-center justify-between w-full">
         <div>
           <h4 className="font-medium text-gray-800">{appointment.title}</h4>
           <p className="text-xs text-gray-500">{appointment.doctor}</p>
         </div>
-        <div className="flex items-center space-x-2">
+        <div className="flex flex-row">
           <div className="text-xs font-medium text-gray-600 flex items-center">
-            <Clock className="h-3 w-3 mr-1" />
+            <Clock className="h-3 w-3 justify-between" />
             {appointment.time}
           </div>
           <div className="flex-shrink-0">

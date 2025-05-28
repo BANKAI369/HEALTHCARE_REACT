@@ -7,28 +7,23 @@ import ActivityFeed from './ActivityFeed';
 
 const DashboardMainContent = () => {
   return (
-    <div className="p-6">
-      <h1 className="text-2xl font-bold text-gray-800 mb-6">Dashboard</h1>
-      
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        <div className="lg:col-span-2">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div>
-              <h2 className="text-lg font-medium text-gray-800 mb-4">Anatomy</h2>
-              <AnatomySection />
-              <HealthStatusCards />
-            </div>
-            <div>
-              <h2 className="text-lg font-medium text-gray-800 mb-4">Calendar</h2>
-              <CalendarView />
-            </div>
+    <div className="rounded-lg ">
+      <h1 className="text-2xl font-bold text-gray-800">Dashboard</h1>
+      <div className=' bg-[#f8f9fa] flex flex-row rounded-lg '>
+        <div className='flex flex-col w-1/2'>
+          <div className='flex flex-row bg-[#f8f9fa] p-4 rounded-lg shadow-sm mb-2'>
+            <AnatomySection />
+            <HealthStatusCards />
+            
           </div>
-          <div className="mt-6">
+          <div>
             <ActivityFeed />
           </div>
         </div>
-        <div>
+        <div className='flex flex-col w-1/2 p-2'>
+          <CalendarView />
           <UpcomingSchedule />
+          
         </div>
       </div>
     </div>

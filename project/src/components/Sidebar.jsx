@@ -3,7 +3,6 @@ import { navItems } from '../data/mockData';
 import * as LucideIcons from 'lucide-react';
 
 const Sidebar = () => {
-  // Dynamically get icons from lucide-react
   const getIcon = (iconName) => {
     const Icon = LucideIcons[iconName];
     return Icon ? <Icon className="h-5 w-5" /> : null;
